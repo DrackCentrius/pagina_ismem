@@ -11,12 +11,36 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                    {{ __('Dashboard') }}
+                </x-nav-link>
             </div>
+
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <x-nav-link :href="route('cliente.index')" :active="request()->routeIs('cliente')">
+                    {{ __(' Clientes') }}
+                </x-nav-link>
+            </div>
+
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <x-nav-link :href="route('ciudad.index')" :active="request()->routeIs('cuidad')">
+                    {{ __(' Ciudades') }}
+                </x-nav-link>
+            </div>
+
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <x-nav-link :href="route('distrito.index')" :active="request()->routeIs('distrito')">
+                    {{ __(' Distrito') }}
+                </x-nav-link>
+            </div>
+
+            <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                <x-nav-link :href="route('pais.index')" :active="request()->routeIs('pais')">
+                    {{ __('Pais') }}
+                </x-nav-link>
+            </div>
+        </div>
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
